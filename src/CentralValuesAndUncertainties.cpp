@@ -138,6 +138,7 @@ namespace NeutrinoFluxReweight{
     double cvfactor = 1.0;
     if(universe==-1)cvfactor = 0.0;
     int univ_seed = baseSeed + universe;
+    std::cout <<"[ PPFX ] The current seed is: " << univ_seed <<"  Base Seed is: " << baseSeed << " Universe is: " << universe << std::endl;
     r3->SetSeed(univ_seed);    
     
     ParameterTable ptable;
